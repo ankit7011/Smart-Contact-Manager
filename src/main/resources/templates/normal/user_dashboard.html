@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http:://www.thymeleaf.org">
+  <div th:replace="normal/base::layout(~{::section})"></div>
+
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>User Dashboard</title>
+  </head>
+  <body>
+    <h1>Welcome Home <span th:text="${user.name}"></span></h1>
+    <h2>I Know that your Email is <span th:text="${user.email}"></span></h2>
+
+    <h3>Wanna Logout ? <a href="" th:href="@{/logout}">click on me </a></h3>
+  </body>
+</html>
